@@ -1,0 +1,35 @@
+.dropdownmenu {
+  position: absolute;
+  width: 12vw;
+  top: 80px;
+  text-align: start;
+  list-style: none;
+  padding-left: 0rem !important;
+}
+.dropdownmenu li {
+  background: #000;
+  cursor: pointer;
+}
+.dropdownmenu li a:hover {
+  color: rgb(95, 183, 163);
+}
+.dropdownmenu.clicked {
+  display: none;
+}
+.dropdownmenu.tournaments {
+  width: 20vw;
+}
+.dropdownlink {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  padding: 16px;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1450px) {
+  .dropdownmenu {
+    display: none;
+  }
+}

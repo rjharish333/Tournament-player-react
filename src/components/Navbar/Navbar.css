@@ -1,0 +1,140 @@
+.Navbar-Items {
+  background: transparent;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+}
+.nav-menu {
+  padding-left: 0px !important;
+}
+.active {
+  background: #000;
+}
+.nav-logo {
+  color: #fff;
+  justify-self: start;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 26px;
+  width: 200px;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 1;
+}
+.nav-logo:hover {
+  color: #fff;
+}
+.nav-item {
+  display: flex;
+  align-items: center;
+  height: 80px;
+}
+.nav-menu {
+  display: grid;
+  grid-template-columns: repeat(8, auto);
+  grid-gap: 10px;
+  list-style: none;
+  text-align: center;
+  width: 70vw;
+  justify-content: center;
+  z-index: 1;
+  margin-bottom: 0rem !important;
+}
+.nav-links {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+.nav-links div {
+  display: none;
+}
+.nav-links:hover {
+  color: rgb(95, 183, 163);
+  transition: all 0.2s ease-in-out;
+}
+.fa-bars {
+  color: #fff;
+}
+.nav-links-mobile {
+  display: none;
+}
+.menu-icon {
+  display: none;
+}
+
+@media screen and (max-width: 1450px) {
+  .Navbar-Items {
+    width: 100%;
+  }
+  .fa-caret-down {
+    display: none;
+  }
+  .nav-item {
+    height: auto !important;
+  }
+  .nav-menu {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    height: 0vh;
+    top: 80px;
+    overflow: scroll;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease-out;
+  }
+  .nav-menu.active {
+    background: #000;
+    height: 85vh;
+    opacity: 0.8;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+  .nav-links {
+    text-align: center;
+    width: 100%;
+    display: table;
+  }
+  .nav-links div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 20px;
+  }
+  .nav-links div a {
+    color: #fff !important;
+    text-decoration: none !important;
+  }
+  .nav-logo {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0%, -50%);
+  }
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+  .fa-times {
+    color: #fff;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .Navbar-Items {
+    width: 100%;
+  }
+}

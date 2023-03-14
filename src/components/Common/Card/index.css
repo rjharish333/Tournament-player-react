@@ -1,0 +1,29 @@
+.card-item {
+    width: calc((100% / 2) - 4rem);
+    margin: 2rem;
+    padding: 5rem;
+    border: 1px solid #58a07d;
+    background-color: transparent;
+}
+
+.text-wrapper-card {
+    max-width: 20rem;
+    margin: auto;
+}
+
+.small-title {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.small-title a {
+    text-align: left;
+    color: rgb(var(--white-color), 0.9);
+    padding-bottom: 1rem;
+    font-weight: 400;
+    font-size: 1.6rem;
+    font-family: inherit;
+    transition: .3s ease;
+}

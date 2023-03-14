@@ -1,0 +1,77 @@
+:root {
+  --accent-green-color: rgb(95, 183, 163);
+}
+.btn--link {
+  min-width: 17rem;
+  padding: 1rem 1.2rem;
+  margin: 0 0.5rem;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: none;
+  text-transform: uppercase;
+  z-index: 1;
+  text-decoration: none;
+}
+.btn--link:hover {
+  transition: all 0.3s ease-out;
+  color: var(--accent-green-color);
+  transition: 250ms;
+}
+.btn--medium {
+  border-radius: 4px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+.btn-line-effect {
+  position: relative;
+  z-index: 2;
+}
+.btn-line-effect:before {
+  content: "";
+  top: 0;
+  left: 0;
+  border-bottom-color: transparent !important;
+  border-right-color: transparent !important;
+  border-top-color: var(--accent-green-color) !important;
+  border-left-color: var(--accent-green-color) !important;
+  position: absolute;
+  width: 0%;
+  height: 0%;
+  border: 2px solid;
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+.btn-line-effect:hover:before,
+.btn-line-effect:hover:after {
+  height: 100%;
+  width: 100%;
+}
+.btn-line-effect:after {
+  content: "";
+  bottom: 0;
+  right: 0;
+  border-bottom-color: var(--accent-green-color) !important;
+  border-right-color: var(--accent-green-color) !important;
+  border-top-color: transparent !important;
+  border-left-color: transparent !important;
+  position: absolute;
+  width: 0%;
+  height: 0%;
+  border: 2px solid;
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 1450px) {
+  .btn-line-effect {
+    position: absolute;
+    right: 5%;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .btn-line-effect {
+    display: none;
+  }
+}
